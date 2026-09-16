@@ -1,0 +1,500 @@
+/* ================================
+   Aya Abdine — Data Science Portfolio
+   ================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #1f2937;
+  background: #ffffff;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(1100px, 88%);
+  margin: 0 auto;
+}
+
+section {
+  padding: 90px 0;
+}
+
+
+/* ================================
+   Navigation
+   ================================ */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-container {
+  width: min(1100px, 88%);
+  margin: 0 auto;
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #4b5563;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+
+/* ================================
+   Hero
+   ================================ */
+
+.hero {
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at 85% 20%, #dbeafe 0, transparent 28%),
+    radial-gradient(circle at 10% 80%, #eef2ff 0, transparent 30%),
+    #f8fafc;
+}
+
+.hero-content {
+  width: min(1100px, 88%);
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.intro {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.hero h1 {
+  color: #111827;
+  font-size: clamp(3rem, 8vw, 5.8rem);
+  line-height: 1.05;
+  letter-spacing: -3px;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  color: #475569;
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  max-width: 680px;
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+
+/* ================================
+   Buttons
+   ================================ */
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.18);
+}
+
+.primary-btn:hover {
+  box-shadow: 0 9px 25px rgba(37, 99, 235, 0.25);
+}
+
+.secondary-btn {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+}
+
+.secondary-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+
+/* ================================
+   Section Titles
+   ================================ */
+
+.section-label {
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  color: #111827;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.section-intro {
+  max-width: 700px;
+  color: #64748b;
+  margin-bottom: 45px;
+}
+
+.alternate-section {
+  background: #f8fafc;
+}
+
+
+/* ================================
+   About
+   ================================ */
+
+.about-text {
+  max-width: 850px;
+  color: #4b5563;
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+
+/* ================================
+   Skills
+   ================================ */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.skill-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.skill-card h3 {
+  color: #111827;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+}
+
+.skill-card p {
+  color: #64748b;
+  font-size: 0.94rem;
+  margin: 7px 0;
+}
+
+
+/* ================================
+   Projects
+   ================================ */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.project-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 32px;
+  min-height: 310px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #bfdbfe;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.09);
+}
+
+.project-number {
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  color: #111827;
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+}
+
+.project-card > p {
+  color: #64748b;
+  font-size: 0.96rem;
+  margin-bottom: 22px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.tags span {
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.project-link {
+  margin-top: auto;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.all-projects {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+/* ================================
+   Education
+   ================================ */
+
+.education-card {
+  max-width: 800px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #2563eb;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.education-date {
+  color: #2563eb;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.education-card h3 {
+  color: #111827;
+  font-size: 1.35rem;
+  margin-bottom: 4px;
+}
+
+.university {
+  color: #475569;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.education-card > p:last-child {
+  color: #64748b;
+}
+
+
+/* ================================
+   Contact
+   ================================ */
+
+.contact {
+  text-align: center;
+  max-width: 750px;
+}
+
+.contact .section-title {
+  margin-bottom: 16px;
+}
+
+.contact > p {
+  color: #64748b;
+  font-size: 1.05rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.contact-links a {
+  padding: 11px 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.contact-links a:hover {
+  color: #2563eb;
+  border-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+
+/* ================================
+   Footer
+   ================================ */
+
+footer {
+  padding: 28px 20px;
+  text-align: center;
+  background: #111827;
+  color: #9ca3af;
+  font-size: 0.88rem;
+}
+
+
+/* ================================
+   Tablet
+   ================================ */
+
+@media (max-width: 900px) {
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* ================================
+   Mobile
+   ================================ */
+
+@media (max-width: 650px) {
+
+  section {
+    padding: 70px 0;
+  }
+
+  .nav-container {
+    min-height: 64px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 0.78rem;
+  }
+
+  .nav-links a:nth-child(2),
+  .nav-links a:nth-child(4) {
+    display: none;
+  }
+
+  .hero {
+    min-height: 82vh;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+
+}
