@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
 
   <meta
     name="description"
-    content="Data Science portfolio of Aya Abdine, featuring projects in machine learning, NLP, data analytics, Python, R, and SQL."
+    content="Portfolio of Aya Abdine, M.Sc. Data Science student working across machine learning, data analytics, NLP, Python, R, and SQL."
   >
 
   <link rel="stylesheet" href="style.css">
@@ -16,10 +17,15 @@
 
 <body>
 
-  <!-- Navigation -->
-  <nav>
+  <!-- ================= NAVIGATION ================= -->
+
+  <nav class="navbar">
     <div class="nav-container">
-      <a href="#home" class="logo">Aya Abdine</a>
+
+      <a href="#home" class="logo">
+        <span class="logo-mark">A</span>
+        <span>Aya Abdine</span>
+      </a>
 
       <div class="nav-links">
         <a href="#about">About</a>
@@ -28,395 +34,895 @@
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
+
     </div>
   </nav>
 
 
-  <!-- Hero -->
+  <!-- ================= HERO ================= -->
+
   <header id="home" class="hero">
-    <div class="hero-content">
 
-      <p class="intro">Hello, I'm</p>
+    <div class="hero-decoration hero-decoration-one"></div>
+    <div class="hero-decoration hero-decoration-two"></div>
 
-      <h1>Aya Abdine</h1>
+    <div class="hero-container">
 
-      <h2>Data Science M.Sc. Student</h2>
+      <div class="hero-content">
 
-      <p class="hero-text">
-        I use data, machine learning, and analytics to explore
-        real-world problems and turn complex information into
-        meaningful insights.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary-btn">View My Projects</a>
-
-        <a
-          href="https://github.com/ayaa137"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn secondary-btn"
-        >
-          GitHub
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/aya-abdine"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn secondary-btn"
-        >
-          LinkedIn
-        </a>
-      </div>
-
-    </div>
-  </header>
-
-
-  <main>
-
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-
-        <p class="section-label">ABOUT</p>
-        <h2 class="section-title">About Me</h2>
-
-        <p class="about-text">
-          I'm currently pursuing an M.Sc. in Data Science for Society
-          and Business at Constructor University Bremen. My work combines
-          data analysis, visualization, machine learning, and natural
-          language processing to investigate real-world datasets and
-          communicate useful insights.
-        </p>
-
-        <p class="about-text">
-          Through academic and independent projects, I have worked with
-          Python, R, SQL, PyTorch, scikit-learn, and modern data-analysis
-          workflows across topics ranging from music and movies to
-          mental-health discussions and socioeconomic data.
-        </p>
-
-      </div>
-    </section>
-
-
-    <!-- Skills -->
-    <section id="skills" class="alternate-section">
-      <div class="container">
-
-        <p class="section-label">SKILLS</p>
-        <h2 class="section-title">Technical Skills</h2>
-
-        <div class="skills-grid">
-
-          <div class="skill-card">
-            <h3>Programming</h3>
-            <p>Python</p>
-            <p>R</p>
-            <p>SQL</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Data Science</h3>
-            <p>Pandas & NumPy</p>
-            <p>Data Preprocessing</p>
-            <p>Statistical Analysis</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Machine Learning</h3>
-            <p>Scikit-learn</p>
-            <p>PyTorch</p>
-            <p>Regression & Classification</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>NLP & Visualization</h3>
-            <p>TF-IDF & Sentiment Analysis</p>
-            <p>Matplotlib</p>
-            <p>ggplot2</p>
-          </div>
-
+        <div class="availability-badge">
+          <span class="status-dot"></span>
+          M.Sc. Data Science Student · Bremen, Germany
         </div>
 
-      </div>
-    </section>
+        <p class="hero-intro">HELLO, I'M</p>
 
+        <h1>
+          Aya <span>Abdine.</span>
+        </h1>
 
-    <!-- Projects -->
-    <section id="projects">
-      <div class="container">
+        <h2>
+          Data Science · Machine Learning<br>
+          <span class="hero-highlight">Data Analytics · NLP</span>
+        </h2>
 
-        <p class="section-label">PORTFOLIO</p>
-        <h2 class="section-title">Featured Projects</h2>
-
-        <p class="section-intro">
-          Selected projects covering machine learning, natural language
-          processing, predictive modeling, data analytics, and visualization.
+        <p class="hero-description">
+          I use data, machine learning, and analytics to explore
+          real-world problems and turn complex information into
+          meaningful insights.
         </p>
 
+        <div class="hero-buttons">
 
-        <div class="projects-grid">
-
-          <!-- Spotify -->
-          <article class="project-card">
-            <span class="project-number">01</span>
-
-            <h3>Spotify Song Popularity Prediction</h3>
-
-            <p>
-              Machine learning analysis predicting song popularity using
-              Spotify audio features and release-year information.
-            </p>
-
-            <div class="tags">
-              <span>Machine Learning</span>
-              <span>Regression</span>
-              <span>Python</span>
-            </div>
-
-            <a
-              href="https://github.com/ayaa137/Spotify-Song-Popularity-Prediction"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              View Project →
-            </a>
-          </article>
-
-
-          <!-- Neural Trees -->
-          <article class="project-card">
-            <span class="project-number">02</span>
-
-            <h3>Neural Trees</h3>
-
-            <p>
-              Implementation and evaluation of neural decision trees using
-              soft splits and neural boosting across classification and
-              regression datasets.
-            </p>
-
-            <div class="tags">
-              <span>PyTorch</span>
-              <span>Neural Trees</span>
-              <span>Explainable ML</span>
-            </div>
-
-            <a
-              href="https://github.com/ayaa137/Neural-Trees-Data-Mining"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              View Project →
-            </a>
-          </article>
-
-
-          <!-- Movies -->
-          <article class="project-card">
-            <span class="project-number">03</span>
-
-            <h3>Movies Data Science Lab</h3>
-
-            <p>
-              Large-scale movie analysis combining descriptive analytics,
-              rating and revenue prediction, and movie classification.
-            </p>
-
-            <div class="tags">
-              <span>Data Science</span>
-              <span>Regression</span>
-              <span>Classification</span>
-            </div>
-
-            <a
-              href="https://github.com/CU-S26-MSDSSB-DSCI-01-DataScienceLab/DataScienceLab_Movies_1"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              View Project →
-            </a>
-          </article>
-
-
-          <!-- Reddit -->
-          <article class="project-card">
-            <span class="project-number">04</span>
-
-            <h3>Reddit Mental Health NLP</h3>
-
-            <p>
-              Text-mining analysis of Reddit mental-health discussions using
-              sentiment analysis, TF-IDF, visualization, and machine-learning
-              classification.
-            </p>
-
-            <div class="tags">
-              <span>NLP</span>
-              <span>TF-IDF</span>
-              <span>Sentiment Analysis</span>
-            </div>
-
-            <a
-              href="https://github.com/ayaa137/Reddit-Mental-Health-NLP-Analysis"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              View Project →
-            </a>
-          </article>
-
-
-          <!-- TikTok -->
-          <article class="project-card">
-            <span class="project-number">05</span>
-
-            <h3>TikTok vs Snapchat</h3>
-
-            <p>
-              Comparative data-driven analysis of TikTok and Snapchat,
-              exploring platform business models, advertising mechanisms,
-              data, and innovation strategies.
-            </p>
-
-            <div class="tags">
-              <span>Data Analytics</span>
-              <span>Visualization</span>
-              <span>Business Analysis</span>
-            </div>
-
-            <a
-              href="https://github.com/ayaa137/TikTok-Snapchat-Digital-Business-Analysis"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              View Project →
-            </a>
-          </article>
-
-
-          <!-- COVID -->
-          <article class="project-card">
-            <span class="project-number">06</span>
-
-            <h3>COVID-19 Data Analysis</h3>
-
-            <p>
-              Time-series and socioeconomic analysis using COVID-19 data
-              from WHO and socioeconomic indicators from the World Bank.
-            </p>
-
-            <div class="tags">
-              <span>R</span>
-              <span>Time Series</span>
-              <span>Data Visualization</span>
-            </div>
-
-            <a
-              href="https://github.com/ayaa137/COVID19-Data-Analysis-R"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              View Project →
-            </a>
-          </article>
-
-        </div>
-
-
-        <div class="all-projects">
-          <a
-            href="https://github.com/ayaa137?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn secondary-btn"
-          >
-            View All GitHub Projects
+          <a href="#projects" class="btn btn-primary">
+            Explore My Projects
           </a>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- Education -->
-    <section id="education" class="alternate-section">
-      <div class="container">
-
-        <p class="section-label">EDUCATION</p>
-        <h2 class="section-title">Education</h2>
-
-        <div class="education-card">
-
-          <p class="education-date">Bremen, Germany</p>
-
-          <h3>M.Sc. Data Science for Society and Business</h3>
-
-          <p class="university">Constructor University Bremen</p>
-
-          <p>
-            Graduate studies focused on data science, machine learning,
-            statistical analysis, text analysis, data mining, and
-            data-driven applications in society and business.
-          </p>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container contact">
-
-        <p class="section-label">CONTACT</p>
-        <h2 class="section-title">Let's Connect</h2>
-
-        <p>
-          I'm interested in opportunities in Data Science,
-          Data Analytics, and Machine Learning.
-        </p>
-
-        <div class="contact-links">
 
           <a
             href="https://github.com/ayaa137"
             target="_blank"
             rel="noopener noreferrer"
+            class="btn btn-secondary"
           >
-            GitHub
+            GitHub ↗
           </a>
 
           <a
             href="https://www.linkedin.com/in/aya-abdine"
             target="_blank"
             rel="noopener noreferrer"
+            class="btn btn-secondary"
           >
-            LinkedIn
+            LinkedIn ↗
+          </a>
+
+        </div>
+
+        <div class="hero-tech">
+          <span>Python</span>
+          <span>R</span>
+          <span>SQL</span>
+          <span>PyTorch</span>
+          <span>scikit-learn</span>
+        </div>
+
+      </div>
+
+
+      <!-- Decorative data panel -->
+
+      <div class="hero-visual">
+
+        <div class="data-card">
+
+          <div class="data-card-top">
+            <span>DATA_SCIENCE.py</span>
+
+            <div class="window-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="code-lines">
+
+            <p><span class="code-purple">import</span> pandas <span class="code-purple">as</span> pd</p>
+            <p><span class="code-purple">import</span> numpy <span class="code-purple">as</span> np</p>
+
+            <br>
+
+            <p>
+              <span class="code-blue">focus</span> =
+              [<span class="code-green">"ML"</span>,
+              <span class="code-green">"Analytics"</span>,
+              <span class="code-green">"NLP"</span>]
+            </p>
+
+            <br>
+
+            <p>
+              <span class="code-blue">goal</span> =
+              <span class="code-green">"turn data into insight"</span>
+            </p>
+
+          </div>
+
+          <div class="mini-chart">
+
+            <div class="chart-heading">
+              <span>PROJECT WORKFLOW</span>
+              <span>01 → 04</span>
+            </div>
+
+            <div class="bars">
+              <span style="height: 38%;"></span>
+              <span style="height: 58%;"></span>
+              <span style="height: 47%;"></span>
+              <span style="height: 76%;"></span>
+              <span style="height: 64%;"></span>
+              <span style="height: 92%;"></span>
+              <span style="height: 82%;"></span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about" class="section about-section">
+
+    <div class="section-container">
+
+      <div class="section-label">
+        <span>01</span>
+        ABOUT
+      </div>
+
+      <div class="about-grid">
+
+        <div>
+          <h2 class="section-title">
+            Data, models &amp;<br>
+            <span>real-world questions.</span>
+          </h2>
+        </div>
+
+        <div class="about-text">
+
+          <p>
+            I'm currently pursuing an M.Sc. in Data Science for Society
+            and Business at Constructor University in Bremen, Germany,
+            after completing a B.Sc. in Agribusiness at the American
+            University of Beirut.
+          </p>
+
+          <p>
+            Through academic and independent projects, I work with
+            machine learning, predictive analytics, natural language
+            processing, statistical analysis, and data visualization
+            using Python, R, SQL, PyTorch, and scikit-learn.
+          </p>
+
+          <p>
+            My projects span areas including movie prediction,
+            interpretable machine learning, mental-health discussions,
+            music analytics, socioeconomic data, digital business,
+            and sustainable agriculture.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="about-stats">
+
+        <div class="stat">
+          <strong>21K+</strong>
+          <span>Reddit posts analyzed</span>
+        </div>
+
+        <div class="stat">
+          <strong>59K+</strong>
+          <span>Movies used in rating analysis</span>
+        </div>
+
+        <div class="stat">
+          <strong>0.87</strong>
+          <span>ROC-AUC in movie classification</span>
+        </div>
+
+        <div class="stat">
+          <strong>4</strong>
+          <span>Core portfolio areas</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SKILLS ================= -->
+
+  <section id="skills" class="section skills-section">
+
+    <div class="section-container">
+
+      <div class="section-label">
+        <span>02</span>
+        TECH STACK
+      </div>
+
+      <div class="section-heading-row">
+
+        <h2 class="section-title">
+          Tools I use to turn<br>
+          <span>data into insight.</span>
+        </h2>
+
+        <p>
+          A growing technical toolkit developed through
+          graduate coursework and hands-on data projects.
+        </p>
+
+      </div>
+
+
+      <div class="skills-grid">
+
+        <article class="skill-card">
+
+          <div class="skill-number">01</div>
+
+          <h3>Programming</h3>
+
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>R</span>
+            <span>SQL</span>
+          </div>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <div class="skill-number">02</div>
+
+          <h3>Data Science</h3>
+
+          <div class="skill-tags">
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Statistical Analysis</span>
+            <span>Data Preprocessing</span>
+          </div>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <div class="skill-number">03</div>
+
+          <h3>Machine Learning</h3>
+
+          <div class="skill-tags">
+            <span>scikit-learn</span>
+            <span>PyTorch</span>
+            <span>Regression</span>
+            <span>Classification</span>
+          </div>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <div class="skill-number">04</div>
+
+          <h3>NLP &amp; Visualization</h3>
+
+          <div class="skill-tags">
+            <span>TF-IDF</span>
+            <span>Sentiment Analysis</span>
+            <span>Matplotlib</span>
+            <span>ggplot2</span>
+          </div>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <div class="skill-number">05</div>
+
+          <h3>Workflow &amp; Tools</h3>
+
+          <div class="skill-tags">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Jupyter</span>
+            <span>VS Code</span>
+            <span>Quarto</span>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PROJECTS ================= -->
+
+  <section id="projects" class="section projects-section">
+
+    <div class="section-container">
+
+      <div class="section-label">
+        <span>03</span>
+        SELECTED WORK
+      </div>
+
+      <div class="section-heading-row">
+
+        <h2 class="section-title">
+          Projects that show<br>
+          <span>how I work.</span>
+        </h2>
+
+        <p>
+          Selected academic and independent work across machine
+          learning, NLP, predictive analytics, and sustainability.
+        </p>
+
+      </div>
+
+
+      <!-- FEATURED PROJECT 01 -->
+
+      <article class="featured-project">
+
+        <div class="project-index">01</div>
+
+        <div class="project-main">
+
+          <div class="project-category">
+            MACHINE LEARNING · DATA MINING
+          </div>
+
+          <h3>Neural Trees</h3>
+
+          <p>
+            Implemented neural decision trees in PyTorch using soft
+            splits and greedy/joint neural boosting across classification
+            and regression datasets. Evaluated predictive performance
+            alongside model interpretability using feature importance,
+            split-weight analysis, and depth ablation.
+          </p>
+
+          <div class="project-tags">
+            <span>PyTorch</span>
+            <span>Machine Learning</span>
+            <span>Data Mining</span>
+            <span>Explainable ML</span>
+          </div>
+
+          <a
+            href="https://github.com/ayaa137/Neural-Trees-Data-Mining"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            View Repository ↗
+          </a>
+
+        </div>
+
+        <div class="project-side">
+
+          <div class="project-metric">
+            <span>METHOD</span>
+            <strong>Soft Splits</strong>
+          </div>
+
+          <div class="project-metric">
+            <span>FRAMEWORK</span>
+            <strong>PyTorch</strong>
+          </div>
+
+          <div class="project-metric">
+            <span>YEAR</span>
+            <strong>2026</strong>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- FEATURED PROJECT 02 -->
+
+      <article class="featured-project">
+
+        <div class="project-index">02</div>
+
+        <div class="project-main">
+
+          <div class="project-category">
+            PREDICTIVE ANALYTICS · MACHINE LEARNING
+          </div>
+
+          <h3>Movies Data Science Lab</h3>
+
+          <p>
+            Built regression and classification models on large-scale
+            movie datasets to predict ratings, revenue, and highly rated
+            movies using Ridge, Gradient Boosting, Extra Trees, and
+            Random Forest.
+          </p>
+
+          <div class="project-tags">
+            <span>Regression</span>
+            <span>Classification</span>
+            <span>Random Forest</span>
+            <span>Gradient Boosting</span>
+          </div>
+
+          <span class="project-note">
+            Academic Data Science Project
+          </span>
+
+        </div>
+
+        <div class="project-side">
+
+          <div class="project-metric">
+            <span>REVENUE MODEL</span>
+            <strong>R² 0.65</strong>
+          </div>
+
+          <div class="project-metric">
+            <span>CLASSIFICATION</span>
+            <strong>AUC 0.87</strong>
+          </div>
+
+          <div class="project-metric">
+            <span>DATASET</span>
+            <strong>59K+ Movies</strong>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- FEATURED PROJECT 03 -->
+
+      <article class="featured-project">
+
+        <div class="project-index">03</div>
+
+        <div class="project-main">
+
+          <div class="project-category">
+            NLP · TEXT ANALYSIS
+          </div>
+
+          <h3>Reddit Mental Health NLP</h3>
+
+          <p>
+            Analyzed more than 21,000 Reddit posts from five
+            mental-health communities across 2019–2022 using text
+            preprocessing, VADER sentiment analysis, TF-IDF, and
+            machine-learning classification.
+          </p>
+
+          <div class="project-tags">
+            <span>NLP</span>
+            <span>TF-IDF</span>
+            <span>VADER</span>
+            <span>Logistic Regression</span>
+          </div>
+
+          <a
+            href="https://github.com/ayaa137/Reddit-Mental-Health-NLP-Analysis"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            View Repository ↗
+          </a>
+
+        </div>
+
+        <div class="project-side">
+
+          <div class="project-metric">
+            <span>TEXT CORPUS</span>
+            <strong>21K+ Posts</strong>
+          </div>
+
+          <div class="project-metric">
+            <span>COMMUNITIES</span>
+            <strong>5</strong>
+          </div>
+
+          <div class="project-metric">
+            <span>PERIOD</span>
+            <strong>2019–2022</strong>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- FEATURED PROJECT 04 -->
+
+      <article class="featured-project">
+
+        <div class="project-index">04</div>
+
+        <div class="project-main">
+
+          <div class="project-category">
+            SUSTAINABILITY · AGRIBUSINESS
+          </div>
+
+          <h3>Whey-Based Liquid Fertilizer</h3>
+
+          <p>
+            Developed a sustainable liquid fertilizer concept from
+            dairy whey waste and evaluated its feasibility through
+            laboratory testing and market analysis as my final-year
+            Agribusiness project at the American University of Beirut.
+          </p>
+
+          <div class="project-tags">
+            <span>Sustainability</span>
+            <span>Market Analysis</span>
+            <span>Agribusiness</span>
+            <span>Laboratory Testing</span>
+          </div>
+
+          <span class="project-note">
+            AUB Final-Year Project · 2025
+          </span>
+
+        </div>
+
+        <div class="project-side">
+
+          <div class="project-metric">
+            <span>FOCUS</span>
+            <strong>Waste → Value</strong>
+          </div>
+
+          <div class="project-metric">
+            <span>ANALYSIS</span>
+            <strong>Feasibility</strong>
+          </div>
+
+          <div class="project-metric">
+            <span>YEAR</span>
+            <strong>2025</strong>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- MORE PROJECTS -->
+
+      <div class="more-projects">
+
+        <div class="more-projects-heading">
+
+          <div>
+            <span class="small-label">MORE WORK</span>
+            <h3>Explore more projects</h3>
+          </div>
+
+          <a
+            href="https://github.com/ayaa137?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-link"
+          >
+            All repositories ↗
+          </a>
+
+        </div>
+
+
+        <div class="more-project-grid">
+
+
+          <a
+            href="https://github.com/ayaa137/Spotify-Song-Popularity-Prediction"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mini-project"
+          >
+            <span>Machine Learning</span>
+            <h4>Spotify Song Popularity</h4>
+            <p>
+              Predicting song popularity using audio features and
+              release-year information.
+            </p>
+            <strong>Explore ↗</strong>
+          </a>
+
+
+          <a
+            href="https://github.com/ayaa137/TikTok-Snapchat-Digital-Business-Analysis"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mini-project"
+          >
+            <span>Business Analytics</span>
+            <h4>TikTok vs Snapchat</h4>
+            <p>
+              Comparative analysis of data-driven business models,
+              advertising, and innovation strategies.
+            </p>
+            <strong>Explore ↗</strong>
+          </a>
+
+
+          <a
+            href="https://github.com/ayaa137/COVID19-Data-Analysis-R"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mini-project"
+          >
+            <span>R · Data Analysis</span>
+            <h4>COVID-19 Data Analysis</h4>
+            <p>
+              Time-series and socioeconomic analysis using WHO and
+              World Bank data.
+            </p>
+            <strong>Explore ↗</strong>
+          </a>
+
+
+          <a
+            href="https://github.com/ayaa137/FuelWatch-Western-Australia-Analysis"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mini-project"
+          >
+            <span>R · Analytics</span>
+            <h4>FuelWatch Australia</h4>
+            <p>
+              Analysis of fuel-price trends, regional patterns,
+              and clustering in Western Australia.
+            </p>
+            <strong>Explore ↗</strong>
+          </a>
+
+
+          <a
+            href="https://github.com/ayaa137/NYC-Flights-2013-Analysis"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mini-project"
+          >
+            <span>R · EDA</span>
+            <h4>NYC Flights 2013</h4>
+            <p>
+              Exploratory analysis of flight patterns using R,
+              tidyverse, and ggplot2.
+            </p>
+            <strong>Explore ↗</strong>
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= EDUCATION ================= -->
+
+  <section id="education" class="section education-section">
+
+    <div class="section-container">
+
+      <div class="section-label">
+        <span>04</span>
+        EDUCATION
+      </div>
+
+      <h2 class="section-title">
+        Academic <span>background.</span>
+      </h2>
+
+
+      <div class="education-list">
+
+        <article class="education-item">
+
+          <div class="education-year">
+            2025 — Present
+          </div>
+
+          <div class="education-content">
+
+            <span>BREMEN, GERMANY</span>
+
+            <h3>
+              M.Sc. in Data Science for Society and Business
+            </h3>
+
+            <h4>Constructor University</h4>
+
+            <p>
+              Graduate studies focused on data science, machine
+              learning, statistical analysis, data mining, natural
+              language processing, and data-driven applications in
+              society and business.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="education-item">
+
+          <div class="education-year">
+            2022 — 2025
+          </div>
+
+          <div class="education-content">
+
+            <span>BEIRUT, LEBANON</span>
+
+            <h3>
+              B.Sc. in Agribusiness
+            </h3>
+
+            <h4>American University of Beirut</h4>
+
+            <p>
+              Undergraduate studies combining agriculture, business,
+              economics, sustainability, and market analysis.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="education-item">
+
+          <div class="education-year">
+            2021
+          </div>
+
+          <div class="education-content">
+
+            <span>CHHIM, LEBANON</span>
+
+            <h3>
+              Lebanese Baccalaureate in General Sciences
+            </h3>
+
+            <h4>College Universelle</h4>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="contact" class="contact-section">
+
+    <div class="section-container">
+
+      <div class="contact-card">
+
+        <div class="section-label light-label">
+          <span>05</span>
+          CONTACT
+        </div>
+
+        <h2>
+          Let's turn data into<br>
+          <span>something meaningful.</span>
+        </h2>
+
+        <p>
+          I'm interested in student and early-career opportunities
+          across Data Science, Machine Learning, Data Analytics, and NLP.
+        </p>
+
+        <div class="contact-buttons">
+
+          <a
+            href="mailto:ayaabdin771@gmail.com"
+            class="btn btn-light"
+          >
+            Email Me
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/aya-abdine"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-light"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            href="https://github.com/ayaa137"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-light"
+          >
+            GitHub ↗
           </a>
 
         </div>
 
       </div>
-    </section>
 
-  </main>
+    </div>
+
+  </section>
 
 
-  <!-- Footer -->
+  <!-- ================= FOOTER ================= -->
+
   <footer>
-    <p>© 2026 Aya Abdine</p>
+
+    <div class="footer-container">
+
+      <p>
+        © 2026 Aya Abdine
+      </p>
+
+      <p>
+        Data Science · Machine Learning · Analytics · NLP
+      </p>
+
+      <a href="#home">
+        Back to top ↑
+      </a>
+
+    </div>
+
   </footer>
 
+
 </body>
+
 </html>
